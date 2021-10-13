@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import WorkSpace from './pages/WorkSpace';
+import Home from './pages/Home';
+import Library from './pages/Library';
+import Navigation from './organisms/Navigation';
+import { TimerProvider } from './hooks/timer-context';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+export const App = () => (
+  <Router>
+    <main className="flex min-h-screen min-w-screen">
+      <TimerProvider>
+        <Navigation />
+        <div>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/workspace">
+              <WorkSpace />
+            </Route>
+            <Route path="/library">
+              <Library />
+            </Route>
+          </Switch>
+        </div>
+      </TimerProvider>
+    </main>
+  </Router>
+);
 
 export default App;

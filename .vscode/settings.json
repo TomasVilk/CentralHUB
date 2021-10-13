@@ -1,0 +1,16 @@
+{
+  "css.customData": [".vscode/tailwindcss.json"],
+  // Run formatter when you save code changes
+  "editor.formatOnSave": false,
+  // Disable default formatting (ESLint formatting will be used instead)
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false
+  },
+  // Auto-fix issues with ESLint when you save code changes
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
