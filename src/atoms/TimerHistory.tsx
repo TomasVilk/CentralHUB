@@ -1,26 +1,33 @@
-import {
-  FC,
-} from 'react';
+import { FC } from 'react';
+import { useTimer } from '../hooks/timer-context';
 
-// TODO: add button to clear localstorage
-// TODO: create timer history interface
+// @TODO create box style for each timer value
 
 const TimerHistory: FC = () => {
-  const timerArr = (): string[] => {
-    const timers = localStorage.getItem('timerTime');
-    return timers ? JSON.parse(timers) : [];
-  };
+  const { dispatch, state } = useTimer();
+
+  const timerArr = state.history;
+
   const display = () => {
-    if (timerArr() != null) {
-      return timerArr().map((times, index) => (
+    if (timerArr != null) {
+      return timerArr.map((times, index) => (
         // eslint-disable-next-line react/no-array-index-key
         <div key={index}>{times}</div>
       ));
     }
     return 'There are no times recorded';
   };
+
+  const clearHistory = () => {
+    dispatch({ type: 'CLEAR_HISTORY' });
+    localStorage.clear();
+  };
+
   return (
-    <div>{display()}</div>
+    <div>
+      <div className="flex items-center justify-center flex-col">{display()}</div>
+      <button type="button" onClick={clearHistory} className="mainbutton">clear history</button>
+    </div>
   );
 };
 
