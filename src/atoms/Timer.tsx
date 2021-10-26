@@ -2,6 +2,7 @@ import {
   FC,
 } from 'react';
 import { formatTime, useTimer } from '../custom/timer-context';
+import { CustomButton } from '../custom/CustomButton';
 
 const Timer: FC = () => {
   const { dispatch, state } = useTimer();
@@ -31,11 +32,11 @@ const Timer: FC = () => {
       </span>
       <div>
         { state.active || state.pause
-          ? <button type="button" onClick={endCounter} className="mainbutton">End</button>
-          : <button type="button" onClick={startCounter} className="mainbutton">Start</button>}
+          ? <CustomButton handleClick={endCounter} label="End" />
+          : <CustomButton handleClick={startCounter} label="Start" />}
         { state.pause
-          ? <button type="button" onClick={resumeCounter} className="mainbutton">Resume</button>
-          : <button type="button" onClick={pauseCounter} className="mainbutton">Pause</button>}
+          ? <CustomButton handleClick={resumeCounter} label="Resume" />
+          : <CustomButton handleClick={pauseCounter} kill={!state.active} label="Pause" />}
       </div>
     </div>
   );
