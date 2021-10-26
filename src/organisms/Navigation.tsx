@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import SiteLogo from '../atoms/SiteLogo';
 import NavLinks from '../atoms/NavLinks';
-import { formatTime, useTimer } from '../hooks/timer-context';
+import { formatTime, useTimer } from '../custom/timer-context';
 
 // @TODO style non active and active timer in nav
 

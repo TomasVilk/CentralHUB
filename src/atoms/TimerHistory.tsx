@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { useTimer } from '../hooks/timer-context';
+import { useTimer } from '../custom/timer-context';
 
 // @TODO create box style for each timer value
 

@@ -1,7 +1,7 @@
 import {
   FC,
 } from 'react';
-import { formatTime, useTimer } from '../hooks/timer-context';
+import { formatTime, useTimer } from '../custom/timer-context';
 
 const Timer: FC = () => {
   const { dispatch, state } = useTimer();
