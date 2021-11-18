@@ -46,6 +46,14 @@ export const formatTime = (time:number) => {
   return `${hours}:${minutes}:${seconds}`;
 };
 
+export const menuTime = (time:number) => {
+  const h = Math.floor(time! / 3600);
+  const m = Math.floor((time! % 3600) / 60);
+  const hours = h < 10 ? `0${h}` : h;
+  const minutes = m < 10 ? `0${m}` : m;
+  return `${hours}:${minutes}`;
+};
+
 const TimerContext = createContext<{
     state: TimerState; dispatch: Dispatch<TimerActions>
 }>(undefined!);
