@@ -1,5 +1,6 @@
 import { FC } from 'react';
-import { useTimer } from '../hooks/timer-context';
+import { useTimer } from '../custom/timer-context';
+import { CustomButton } from '../custom/CustomButton';
 
 // @TODO create box style for each timer value
 
@@ -26,7 +27,7 @@ const TimerHistory: FC = () => {
   return (
     <div>
       <div className="flex items-center justify-center flex-col">{display()}</div>
-      <button type="button" onClick={clearHistory} className="mainbutton">clear history</button>
+      <CustomButton handleClick={clearHistory} label="Clear History" />
     </div>
   );
 };

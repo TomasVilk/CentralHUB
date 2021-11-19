@@ -3,7 +3,7 @@ import WorkSpace from './pages/WorkSpace';
 import Home from './pages/Home';
 import Library from './pages/Library';
 import Navigation from './organisms/Navigation';
-import { TimerProvider } from './hooks/timer-context';
+import { TimerProvider } from './custom/timer-context';
 
 export const App = () => (
   <Router>

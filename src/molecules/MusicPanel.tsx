@@ -1,5 +1,6 @@
 import { FC, useState } from 'react';
 import { albums, Youtube } from '../atoms/Youtube';
+import { CustomButton } from '../custom/CustomButton';
 
 const jammers = {
   link: 'https://www.youtube.com/embed/videoseries?list=PLlXuKWrgf1lul3V_Wd_-SFtHCqYO1fSaD',
@@ -20,9 +21,9 @@ export const MusicPanel: FC = () => {
     <div className="flex items-center flex-col">
       <Youtube {...playlist} />
       <div>
-        <button type="button" onClick={() => setPlaylist(jammers)} disabled={playlist.title === jammers.title} className="mainbutton">Jams</button>
-        <button type="button" onClick={() => setPlaylist(bangers)} disabled={playlist.title === bangers.title} className="mainbutton">Bangers</button>
-        <button type="button" onClick={() => setPlaylist(lofi)} disabled={playlist.title === lofi.title} className="mainbutton">Lofi</button>
+        <CustomButton handleClick={() => setPlaylist(jammers)} kill={playlist.title === jammers.title} label="Jams" />
+        <CustomButton handleClick={() => setPlaylist(bangers)} kill={playlist.title === bangers.title} label="Bangers" />
+        <CustomButton handleClick={() => setPlaylist(lofi)} kill={playlist.title === lofi.title} label="Lofi" />
       </div>
     </div>
   );
