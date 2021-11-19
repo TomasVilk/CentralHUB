@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/CentralHUB/static/css/main.53a4bc41.chunk.css",
-    "main.js": "/CentralHUB/static/js/main.f2f9f451.chunk.js",
-    "main.js.map": "/CentralHUB/static/js/main.f2f9f451.chunk.js.map",
+    "main.css": "/CentralHUB/static/css/main.5bb57820.chunk.css",
+    "main.js": "/CentralHUB/static/js/main.d2e4cfdb.chunk.js",
+    "main.js.map": "/CentralHUB/static/js/main.d2e4cfdb.chunk.js.map",
     "runtime-main.js": "/CentralHUB/static/js/runtime-main.2ae7e0f7.js",
     "runtime-main.js.map": "/CentralHUB/static/js/runtime-main.2ae7e0f7.js.map",
     "static/js/2.68386bb8.chunk.js": "/CentralHUB/static/js/2.68386bb8.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.45fbea8b.chunk.js": "/CentralHUB/static/js/3.45fbea8b.chunk.js",
     "static/js/3.45fbea8b.chunk.js.map": "/CentralHUB/static/js/3.45fbea8b.chunk.js.map",
     "index.html": "/CentralHUB/index.html",
-    "static/css/main.53a4bc41.chunk.css.map": "/CentralHUB/static/css/main.53a4bc41.chunk.css.map",
+    "static/css/main.5bb57820.chunk.css.map": "/CentralHUB/static/css/main.5bb57820.chunk.css.map",
     "static/js/2.68386bb8.chunk.js.LICENSE.txt": "/CentralHUB/static/js/2.68386bb8.chunk.js.LICENSE.txt",
     "static/media/library.993a9458.svg": "/CentralHUB/static/media/library.993a9458.svg",
     "static/media/logo.3958e2f9.svg": "/CentralHUB/static/media/logo.3958e2f9.svg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.2ae7e0f7.js",
     "static/js/2.68386bb8.chunk.js",
-    "static/css/main.53a4bc41.chunk.css",
-    "static/js/main.f2f9f451.chunk.js"
+    "static/css/main.5bb57820.chunk.css",
+    "static/js/main.d2e4cfdb.chunk.js"
   ]
 }
