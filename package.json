@@ -1,5 +1,4 @@
 {
-  "homepage": "https://tomasvilk.github.io/CentralHUB",
   "name": "centralhub",
   "version": "0.1.0",
   "private": true,
@@ -27,10 +26,7 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
-    "eslint": "eslint ./ --fix",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-
+    "eslint": "eslint ./ --fix"
   },
   "eslintConfig": {
     "extends": [
