@@ -12,13 +12,13 @@ export const App = () => (
         <Navigation />
         <div>
           <Switch>
-            <Route exact path="/CentralHUB">
+            <Route exact path="/">
               <Home />
             </Route>
-            <Route path="/CentralHUB/workspace">
+            <Route path="/workspace">
               <WorkSpace />
             </Route>
-            <Route path="/CentralHUB/library">
+            <Route path="/library">
               <Library />
             </Route>
           </Switch>
