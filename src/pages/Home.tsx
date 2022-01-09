@@ -1,6 +1,6 @@
 export const Home = () => (
-  <div className="ml-4 bg-dark">
-    <a href="https://www.youtube.com/watch?v=oZaLXmkbO3E" target="_blank" rel="noreferrer" className="cursor-not-allowed font-extrabold text-7xl font-catamaran text-white ">Oh no Cringe</a>
+  <div className="h-full w-full flex justify-center items-center">
+    <p className="text-9xl">Work in progress!</p>
   </div>
 );
 

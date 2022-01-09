@@ -7,7 +7,7 @@ import { TimerProvider } from './custom/timer-context';
 
 export const App = () => (
   <Router>
-    <main className="flex min-h-screen min-w-screen">
+    <main className="box-border flex min-h-screen min-w-screen">
       <TimerProvider>
         <Navigation />
         <div>
